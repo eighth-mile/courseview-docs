@@ -126,7 +126,33 @@ List of devices attached
 
 ### Ubuntu
 
-#### Step 1: xyz
+#### Step 1: Install adb & git
+
+```
+sudo apt install android-tools-adb android-tools-fastboot git
+```
+
+#### Step 2: Install nvm (Node Version Manager)
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+echo 'export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"' >> ~/.bashrc
+echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm' >> ~/.bashrc
+source ~/.bashrc
+```
+
+#### Step 3: Install node 16
+
+```
+nvm install 16
+nvm use 16
+```
+
+Verify `node 16` is used through:
+
+```
+node --version
+```
 
 ### macOS
 
