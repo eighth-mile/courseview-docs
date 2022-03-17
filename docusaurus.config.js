@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Courseview Docs',
   tagline: '',
-  url: 'https://eighth-mile.github.io/courseview-docs',
-  baseUrl: '/',
+  url: 'https://eighth-mile.github.io',
+  baseUrl: '/courseview-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -22,10 +22,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/', // disable landing page
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/eighth-mile/courseview-docs/tree/main/docs',
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -45,7 +47,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'index',
             position: 'left',
             label: 'Start',
           },
@@ -59,7 +61,7 @@ const config = {
             items: [
               {
                 label: 'Getting started',
-                to: '/docs/intro',
+                to: '/',
               },
             ],
           },
