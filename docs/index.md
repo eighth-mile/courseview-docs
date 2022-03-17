@@ -154,6 +154,18 @@ Verify `node 16` is used through:
 node --version
 ```
 
+#### Step 4: Install yarn
+
+```
+npm install --global yarn
+```
+
+#### Step 5: Install expo
+
+```
+yarn global add expo-cli
+```
+
 ### macOS
 
 #### Step 1: Install Homebrew
