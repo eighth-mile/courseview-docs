@@ -91,6 +91,10 @@ choco install cygwin --version 3.3.4 -y
 choco install adb --version 32.0.0 -y
 ```
 
+```bash
+npm install --global expo-cli
+```
+
 #### Step 3 - Verify all installations
 
 Open **Cygwin** and run the following commands:
